@@ -72,6 +72,14 @@ h1 {
 -->
 
 ---
+layout: cover
+background: https://source.unsplash.com/collection/1134422/1920x1080
+level: 2
+---
+
+# Disclaimer
+
+---
 layout: default
 level: 2
 ---
