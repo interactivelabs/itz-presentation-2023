@@ -391,7 +391,7 @@ level: 2
 ---
 layout: cover
 background: ./images/entrance_3.jpg
-level: 2
+level: 3
 ---
 
 # **DEMO**
