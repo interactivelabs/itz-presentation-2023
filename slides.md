@@ -47,12 +47,12 @@ level: 2
 ::right::
 
 <div class="relative flex justify-center h-96">
-  <img v-click="[1,2]" src="/images/sold_school.jpg" class="h-96 absolute">
-  <img v-click="[2,3]" src="/images/family.jpg" class="h-96 absolute">
-  <img v-click="[3,4]" src="/images/hades_cover.jpg" class="h-96 absolute">
-  <img v-click="[4,5]" src="/images/luis_bar_1.jpg" class="h-96 absolute">
-  <img v-click="[5,6]" src="/images/office_1.jpg" class="h-96 absolute">
-  <img v-click="6" src="/images/me_office_1.jpg" class="h-96 absolute">
+  <img v-click="[1,2]" src="/images/sold_school.jpg" class="h-96 absolute" />
+  <img v-click="[2,3]" src="/images/family.jpg" class="h-96 absolute" />
+  <img v-click="[3,4]" src="/images/hades_cover.jpg" class="h-96 absolute" />
+  <img v-click="[4,5]" src="/images/luis_bar_1.jpg" class="h-96 absolute" />
+  <img v-click="[5,6]" src="/images/office_1.jpg" class="h-96 absolute" />
+  <img v-click="6" src="/images/me_office_1.jpg" class="h-96 absolute" />
 </div>
 
 <style>
@@ -101,9 +101,9 @@ Why the title of the presentation?
 ::right::
 
 <div class="relative flex justify-center h-96">
-  <img v-click="[1,2]" src="/images/why_works.png" class="h-96 absolute">
-  <img v-click="[4,5]" src="/images/docs.png" class="h-96 absolute">
-  <img v-click="[5,6]" src="/images/progress.webp" class="h-96 absolute">
+  <img v-click="[1,2]" src="/images/why_works.png" class="h-96 absolute" />
+  <img v-click="[4,5]" src="/images/docs_meme.png" class="h-96 absolute" />
+  <img v-click="[5,6]" src="/images/progress.webp" class="h-96 absolute" />
 </div>
 
 <!--
@@ -164,7 +164,76 @@ level: 3
 
 # Containers for local development
 
+<img src="/images/docker_dev_env.png" />
 
+<!--
+  CODING
+-->
+
+---
+layout: image-left
+image: /images/entrance_1.jpg
+level: 3
+---
+
+# Automated Testing
+
+- Linting and Formatting
+  - <logos-prettier /> Prettier
+  - <logos-eslint /> ESLint
+
+<img src="/images/prettier.gif" />
+
+- Unit Testing
+
+```javascript
+function sum(a, b) {
+  return a + b;
+}
+
+test('adds 1 + 2 to equal 3', () => {
+  expect(sum(1, 2)).toBe(3);
+});
+```
+
+<!--
+  CODING
+-->
+
+---
+layout: image-left
+image: /images/entrance_2.jpg
+level: 3
+---
+
+# Automated Testing
+
+- Integration Testing
+
+```javascript
+[TestFixture]
+public class MyServiceIntegrationTests
+{
+  [Test]
+  public async Task MyService_ReturnsOk()
+  {
+    var response = await _client.GetAsync("/api/myservice");
+    // Assert that the response status code is 200 OK
+    response.EnsureSuccessStatusCode();
+  }
+}
+```
+
+- E2E Testing
+
+```javascript
+describe('My Page', () => {
+  it('should have a button', () => {
+    cy.visit('/my-page');
+    cy.get('button').should('exist');
+  });
+});
+```
 
 <!--
   CODING
@@ -172,11 +241,34 @@ level: 3
 
 ---
 layout: image-right
-image: /images/kitchen_1.jpg
+image: /images/office_1.jpg
 level: 2
 ---
 
 # Code Collaboration
+
+- Version Control (Git)
+  - <mdi-github /> GitHub
+  - <logos-gitlab /> GitLab
+
+1. Clone the repository to your local machine:
+
+```bash
+gh repo clone <repository>
+```
+
+2. Create a new branch for your feature or bug fix:
+
+```bash
+git checkout -b <branch-name>
+```
+
+3. Make changes to the code and commit them:
+
+```bash
+git add .
+git commit -m "Your commit message"
+```
 
 <!--
   SHARING THE CODE
@@ -184,28 +276,105 @@ level: 2
 
 ---
 layout: image-right
-image: /images/kitchen_1.jpg
+image: /images/office_1.jpg
+level: 2
+---
+
+# Code Collaboration
+
+4. Push your changes to the remote branch:
+
+```bash
+git push -u origin <branch-name>
+```
+
+5. Open a pull request on GitHub:
+
+```bash
+gh pr create --title "Your pull request title" --body "Your pull request description"
+```
+
+6. Review and discuss the changes with your team and make any necessary updates to the code.
+7. Once the pull request is approved, merge it into the main branch:
+
+```bash
+gh pr merge <pull-request-number> --merge
+```
+
+8. Delete the remote branch:
+
+```bash
+gh pr close <pull-request-number>
+```
+
+<!--
+SHARING THE CODE
+-->
+
+---
+layout: image-right
+image: /images/docs.png
+level: 2
+---
+
+# Code Collaboration
+
+- Documentation
+  - <simple-icons-nextra /> https://nextra.site
+- Service Discovery
+  - <cib-swagger /> Swagger
+
+<img v-click="1" src="/images/swagger.png" />
+
+<!--
+SHARING THE CODE
+-->
+
+---
+layout: image-right
+image: https://source.unsplash.com/collection/1134422/1920x1080
 level: 2
 ---
 
 # Code Deployment
+
+- Cloud services
+  - <logos-aws /> AWS
+  - <logos-google-cloud/> Google Cloud
+  - <logos-microsoft-azure /> Azure
+  - <radix-icons-vercel-logo class="color-white" /> Vercel
+- Cloud Offerings
+  - Edge
+    - <logos-aws-lambda /> AWS Lambda
+  - Containers
+    - <logos-aws-ecs /> AWS EC2
+  - VMs
+    - <logos-aws-ec2 /> AWS EC2
 
 <!--
   DEPLOYING
 -->
 
 ---
-layout: image-right
-image: /images/kitchen_1.jpg
+image: https://source.unsplash.com/collection/1134422/1920x1080
 level: 2
 ---
 
-# Code Serving
+# Code Deployment
 
-(Very Web/Services Focused)
+- CI/CD
+  - Automated testing
+  - Build And Deploy
+
+<img v-click="[1,2]" src="/images/cd_1.png" class="h-80 absolute" />
+<img v-click="[2,3]" src="/images/cd_2.png" class="h-80 absolute" />
+<img v-click="[3,4]" src="/images/cd_3.png" class="h-80 absolute" />
+<img v-click="[4,5]" src="/images/cd_4.png" class="h-80 absolute" />
+<img v-click="[5,6]" src="/images/cd_5.png" class="h-80 absolute" />
+<img v-click="6" src="/images/cd_6.png" class="h-80 absolute" />
 
 <!--
-  CLOUD
+  DEPLOYING
 -->
 
 ---
