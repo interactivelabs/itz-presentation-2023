@@ -1,0 +1,47 @@
+My experience with collaboration and tools at Silicon Valley
+(What your teachers don’t want you to know)
+
+1)	Who am I?
+    a)	Luis Gonzalez
+    b)	Sr. Software Engineer at Airbnb
+    c)	ITZ Alumni
+    d)	Father of 2
+    e)	Video game enjoyer
+2)	What do I do?
+    a)	Write code for a living (what people think we do)
+    b)	Solve problems (What we actually do)
+        i)	Learning *
+        ii)	Understanding Code *
+            (1)	Read and interpret documentation
+    iii)	Debug problems 
+        (1)	Google/ChatGPT expert
+        (2)	Stack-Overflow master
+3)	Project Management
+    a)	(Un)Agile (Scrum/Kanban)
+        i)	Projects
+        ii)	Maintenance
+        iii)	Migration
+    b)	Cross Discipline Collaboration
+4)	Tools for collaboration on code
+    a)	Version Control (Git)
+        i)	GitHub
+        ii)	GitLab
+    b)	Documentation
+    c)	Service Discovery
+5)	Tools for developing the code
+    a)	Containers for local development
+    b)	Automated Testing (CI/CD)
+        i)	Linters and Formatters
+        ii)	Unit Testing
+        iii)	Integration Testing
+        iv)	E2E Testing
+6)	Tools for the code to run (Very Web/Services Focused)
+    a)	Cloud services
+        i)	AWS, Google Cloud, Vercel
+            (1)	Edge (Server Functions)
+            (2)	Containers (Docker)
+            (3)	VMs
+    b)	CI/CD
+        i)	Automated Testing
+        ii)	Build and deploy
+7)	Q&A
