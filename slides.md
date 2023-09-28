@@ -388,6 +388,13 @@ level: 2
 <!--
   DEPLOYING
 -->
+---
+layout: cover
+background: ./images/entrance_3.jpg
+level: 3
+---
+
+# **DEMO**
 
 ---
 layout: cover
